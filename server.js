@@ -165,6 +165,6 @@ app.get('*', function(req, res, next){
 })
 
 
-app.listen(8080, function(){
+app.listen(process.env.PORT || 8080, function(){
     console.log("server started at port: 8080");
 });

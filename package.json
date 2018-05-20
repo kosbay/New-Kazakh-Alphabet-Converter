@@ -27,7 +27,7 @@
     "word-extractor": "^0.1.4"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js -p $PORT"
   },
   "devDependencies": {},
   "license": "ISC"
