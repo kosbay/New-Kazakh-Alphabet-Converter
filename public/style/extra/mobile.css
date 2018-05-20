@@ -1,0 +1,22 @@
+
+@media only screen and  (max-width: 601px){
+    #block-collapse .collapsible-body .input_text{ height: 90px !important;}
+}
+
+@media only screen and  (max-width: 992px){
+
+    #block-textarea textarea{ font-size: 1em !important}
+
+    #block-textarea i#desktop{ display: none !important}
+    #block-textarea .grid p{ display: none !important}
+    #block-textarea .grid_left{ margin-right: 0 !important}
+    #block-textarea .grid_right{ margin-left: 0 !important; margin-top: 20px !important}
+
+    #block-collapse .body-content{ min-height: 18em !important;}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+
+    footer { position: relative !important;}
+}

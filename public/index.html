@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html ng-app = 'latyn'>
+    <head>
+        <base href = "/">
+        <link rel = "stylesheet" href = "style/all.css" type = "text/css">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Qazaqsha latyn áripteri</title>
+
+
+
+    </head>
+    <body  class = "body">
+        <header ng-controller = "HeaderCtrl as vm">
+
+            <div id="block-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m2 l2">
+                            <div class="logo hide-on-med-and-down">
+                                <img src="images/bazaart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col s12 m12 l10">
+                            <nav class="main-navbar">
+                                <div class="nav-wrapper">
+                                    <ul class="hide-on-med-and-down navbar-links">
+                                        <li>
+                                            <a ui-sref="home">мәтін</a>
+                                        </li>
+                                        <li>
+                                            <a ui-sref = "profile">сайт</a>
+                                        </li>
+                                        <li>
+                                            <a ui-sref="about">ереже</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="left-sidebar">
+                                <ul id="main-menu" class="side-nav">
+                                    <li class="logo-menu">
+                                        <img src="images/bazaart.png" alt="">
+                                    </li>
+                                    <li>
+                                        <a href="#matyn">мәтін</a>
+                                    </li>
+                                    <li>
+                                        <a href="">сайт</a>
+                                    </li>
+                                    <li>
+                                        <a href="">ереже</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" data-activates="main-menu" class="button-collapse grey-text hide-on-large-only"><i class="mdi mdi-menu"></i></a>
+                            <div class="logo mobile hide-on-large-only">
+                                <img src="images/bazaart.png" alt="">
+                            </div>
+                            <div class="right-btn">
+                                <div class="login mobile">
+                                    <a href="#modal" class="waves-effect waves-light btn modal-trigger"><i class="mdi mdi-login-variant"></i> Кіру</a>
+
+                                    <div id="modal" class="modal">
+                                        <ul class="tabs">
+                                            <li class="tab col s6">
+                                                <a href="#tab1">Кіру</a>
+                                            </li>
+                                            <li class="tab col s6">
+                                                <a href="#tab2">Тіркелу</a>
+                                            </li>
+                                        </ul>
+                                        <div class="modal-content">
+                                            <div id="tab1" class="content-tab">
+                                                <div class="input-field">
+                                                    <input id="email" type="email" class="validate">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                                <div class="input-field">
+                                                    <input id="password" type="password" class="validate">
+                                                    <label for="password">Құпия сөз</label>
+                                                </div>
+                                                <a href="" class="waves-effect waves-light btn btn_login">Кіру</a>
+                                            </div>
+                                            <div id="tab2" class="content-tab">
+                                                <div class="input-field">
+                                                    <input id="name" type="text" class="validate">
+                                                    <label for="email">Аты</label>
+                                                </div>
+                                                <div class="input-field">
+                                                    <input id="email_second" type="email" class="validate">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                                <div class="input-field">
+                                                    <input id="password_second" type="password" class="validate">
+                                                    <label for="password">Құпия сөз</label>
+                                                </div>
+                                                <a href="" class="waves-effect waves-light btn btn_register">Тіркелу</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <ui-view></ui-view>
+
+        <footer> 
+<div class="container"> 
+<div class="row no-mar-bottom"> 
+<div class="col s12 m6 l4"> 
+<h5>Байланыс</h5> 
+<ul> 
+<li> 
+        <a class="valign-wrapper"><i class="mdi mdi-phone mdi-18px"></i>+7 (775) 613 64 42</a> <br> 
+<a class="valign-wrapper"><i class="mdi mdi-phone mdi-18px"></i>+7 (777) 398 53 65</a> <br> 
+
+</li> 
+</ul> 
+</div> 
+<div class="col s12 m6 l4"> 
+<h5>Бөлісу</h5> 
+<ul> 
+<li> 
+<a class="valign-wrapper"><i class="mdi mdi-instagram mdi-24px"></i></a> 
+<a class="valign-wrapper"><i class="mdi mdi-vk mdi-24px"></i></a> 
+<a class="valign-wrapper"><i class="mdi mdi-google-plus mdi-24px"></i></a> 
+<a class="valign-wrapper"><i class="mdi mdi-twitter mdi-24px"></i></a> 
+</li> 
+</ul> 
+</div> 
+<div class="col s12 m6 l4"> 
+<h5>Қосымша</h5> 
+<ul> 
+<li> 
+<a class="valign-wrapper">Жоба туралы</a><br> 
+<a class="valign-wrapper">Бізбен байланыс</a> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+
+<div class="text-footer"> 
+<div class="container"> 
+<div class="row no-mar-bottom"> 
+<div class="col s12 text-bottom"> 
+© 2018. Барлық құқықтар қорғалған. 
+</div> 
+</div> 
+</div> 
+</div> 
+</footer>
+
+        <script  src = "js/vendor/ng.min.js"></script>
+        <script  src="js/vendor/ng-route.min.js"></script>
+        <script  src="js/vendor/custom-file-input.js"></script>
+        
+        <script src = "app.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/extra/jquery.ml-keyboard.js"></script>
+        <script type="text/javascript" src="js/extra/clipboard.min.js"></script>
+        <script type="text/javascript" src="js/extra/materialize.min.js"></script>
+        <script type="text/javascript" src="js/extra/main.js"></script>
+        <script src = "js/pages/ctrl.profile.js"></script>
+        <script src = "js/pages/ctrl.home.js"></script>
+        <script src = "js/pages/ctrl.about.js"></script>
+        <script src = "js/pages/ctrl.header.js"></script>
+
+    </body>
+</html>

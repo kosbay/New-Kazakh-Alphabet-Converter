@@ -1,0 +1,10 @@
+
+
+.box {
+	padding: 6.25rem 1.25rem;
+}
+
+.box + .box {
+	margin-top: 2.5rem;
+}
+

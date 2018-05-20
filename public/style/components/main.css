@@ -1,0 +1,112 @@
+.body{
+
+    background-color: aliceblue;
+}
+.main{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    position: relative;
+}
+.doc-area{
+    width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.doc--input{
+    position: absolute;
+}
+
+.input--content{
+    display: flex;
+    justify-content: center;
+}
+
+.input--left{
+    width: 40%; /* Ширина поля в процентах */
+    height: 200px; /* Высота поля в пикселах */
+    resize: none;
+    margin-right: 20px;
+    left: 50px;
+}
+
+.input--right{
+    width: 40%;
+    height: 200px;
+    resize: none;
+    right: 50px;
+    margin-left: 20px;
+}
+
+.input--button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    position: absolute;
+    
+}
+.input--button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.input--button--top{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    left: 345px;
+}
+.input--button--top:disabled{
+    background-color: black;
+}
+.input--button--top:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.down-href{
+    margin: 0 auto 0;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.down-icon{
+    width: 100px;
+}
+.down-title {
+    color: #4CAF50;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.button--div{
+    margin: 10px;
+    margin-top: -20px;
+}

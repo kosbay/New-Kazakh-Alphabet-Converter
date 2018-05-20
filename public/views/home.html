@@ -1,0 +1,119 @@
+<div id="block-textarea">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="line hide-on-large-only">
+                    <p>Кирил</p>
+                    <a title="Тіл ауыстыру" href=""><i class="mdi mdi-arrow-expand mdi-24px"></i></a>
+                    <p>Латын</p>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l6">
+                <div class="grid grid_left">
+                    <div class="panel panel_left">
+                        <a title="Өшіру"><i class="mdi mdi-close-circle-outline mdi-24px" ng-click = "vm.clear()"></i></a>
+                        <a title="Экрандық клавиатура"><i id="keyboard" class="mdi mdi-keyboard mdi-24px"></i></a>
+                        <p ng-if = "vm.toLatin">Кирил</p>
+                        <p ng-if = "vm.toCyril">Латын</p>
+                    </div>
+                    <div class="textInput">
+                        <div class="text-box">
+                            <textarea id="input_text" ng-if = "vm.toLatin" ng-model = "vm.text" ng-keyup="vm.doProcess()" type="text" placeholder="Мәтін енгізіңіз" class="materialize-textarea input"></textarea>
+                            <textarea id="input_text" ng-if = "vm.toCyril" ng-model = "vm.text" ng-keyup="vm.doProcessCyril()" type="text" placeholder="Mátin engizińiz" class="materialize-textarea input"  ></textarea>
+
+                        </div>
+                        <div class="message-text">
+                            <span id="textCounter">0</span>
+                            / 10000
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l6">
+                <div class="grid grid_right">
+                    <div class="panel panel_right">
+                        <a class="copy" data-clipboard-target="#foo" title="Көшіру"><i class="mdi mdi-content-copy mdi-24px"></i></a>
+                        <p ng-if = "vm.toLatin">Латын</p>
+                        <p ng-if = "vm.toCyril">Кирил</p> 
+                    </div>
+                    <div class="textInput">
+                        <div class="text-box">
+                            <textarea id="foo" ng-if = "vm.toLatin" ng-model = "vm.result" placeholder="" class="materialize-textarea" disabled></textarea>
+                            <textarea id="foo" ng-if = "vm.toCyril" ng-model = "vm.result" placeholder="" class="materialize-textarea" disabled></textarea>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a title="Тіл ауыстыру"><i id="desktop" ng-click = "vm.toLatinBut()" class="mdi mdi-arrow-expand mdi-24px"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="block-collapse">
+    <div class="container">
+        <div class="row no-mar-bottom">
+            <div class="col s12">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="mdi mdi-arrow-down-drop-circle mdi-24px"></i><h4>Сөз тексеру</h4></div>
+                        <div class="collapsible-body body-input">
+                            <div class="body-content">
+                                <div class="col s10 m10 l4">
+                                    <textarea id="input" placeholder="Сөз енгізіңіз" class="materialize-textarea"></textarea>
+                                </div>
+                                <div class="col s2 m2 l1">
+                                    <a class="btn-floating waves-effect waves-light"><i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                                <div class="col s12 m12 l7">
+                                    <div class="desc">
+                                        <p>Сиыр</p>
+                                        <p>Зат есім</p>
+                                        <p>Сиыр, ірі қара, мүйізді ірі қара — сүтқоректілер класына жататын аша тұяқты, қуыс мүйізді, күйіс қайыратын жануарлар</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="mdi mdi-arrow-down-drop-circle mdi-24px"></i><h4>Құжат аудару</h4></div>
+                        <div class="collapsible-body">
+                            <div class="docs-content">
+                                <div class="col s12 m3">
+                                    <div class="file-field input-field">
+                                        <div class="btn">
+                                            <span>File</span>
+                                            <input type="file"
+                                                   ng-click = "vm.showButton()"
+                                                   ng-if = "vm.hideFile"
+                                                   file-model="vm.file"
+                                                   on-after-validate = "vm.uploadFile(file)">
+                                        </div>
+
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text" placeholder="Upload file">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m3">
+                                    <a class="btn btn-convert" ng-click = "vm.test()">Аудару</a>
+                                </div>
+                                <div class="col s12 m3" ng-if = "vm.downDoc">
+                                    <a class="btn download" href="{{vm.result}}" download >Жүктеу</a>
+                                </div>
+                                <div class="col s12 m3">
+                                    <p>Кирил</p>
+                                    <a title="Тіл ауыстыру"><i class="mdi mdi-arrow-expand mdi-24px"></i></a>
+                                    <p>Латын</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

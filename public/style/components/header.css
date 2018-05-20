@@ -1,0 +1,24 @@
+.header{
+    margin-top: 3px;
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+}
+
+.menus{
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    right: 40px;
+}
+
+.nav--link{
+    padding: 10px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgba(0,0,0,0.24);
+}
+.nav--link:last-child{
+    border-right: none;
+}
